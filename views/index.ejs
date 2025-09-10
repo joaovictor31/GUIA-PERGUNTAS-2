@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando</h1>
+    <h2>Funciona</h2>
+    <p>Digite o seu nome:</p>
+    <h3> Nome: <%= nome %> </h3>
+    <h3> Idade: <%= idade %> </h3>
+    <h3> Altura: <%= altura %></h3>
+
+    <% if (idade >= 18) {%>
+        <p><b>Você é maior de idade</b></p>
+        <%} else {%> 
+            <p>Você é menor de idade</p>
+            <%} %>
+</body>
+</html>
