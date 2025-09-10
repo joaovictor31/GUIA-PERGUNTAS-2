@@ -18,5 +18,30 @@
         <%} else {%> 
             <p>Você é menor de idade</p>
             <%} %>
+
+    <hr>
+    <% if(acesso) {%>
+        <h1>Bem-vindo de Volta!</h1>
+        <%} else {%>
+            <h1>Por favor faça o login</h1>
+            <%} %>
+
+    <hr>
+
+    <% if (nota>=7){%>
+        <p>Aprovado!</p>
+    <%} else if (nota >4 && nota <=6) {%>
+        <p>Recuperação</p> 
+        <%} else {%>
+        <p>Reprovado</p>
+        <%}%>
+
+        <hr>
+
+        <% if (estoqueProdutos){ %>
+            <p>Produtos: [Banana, Maça, Melão]</p>
+            <% } else { %>
+                <p>Nenhum produto disponível</p>
+                <% } %>
 </body>
 </html>
