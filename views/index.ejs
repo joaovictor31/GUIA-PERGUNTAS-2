@@ -5,53 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Perguntas</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Testando</h1>
-    <h2>Funciona</h2>
-    <p>Digite o seu nome:</p>
-    <h3> Nome: <%= nome %> </h3>
-    <h3> Idade: <%= idade %> </h3>
-    <h3> Altura: <%= altura %></h3>
-
-    <% if (idade >= 18) {%>
-        <p><b>Você é maior de idade</b></p>
-        <%} else {%> 
-            <p>Você é menor de idade</p>
-            <%} %>
-
-    <hr>
-    <% if(acesso) {%>
-        <h1>Bem-vindo de Volta!</h1>
-        <%} else {%>
-            <h1>Por favor faça o login</h1>
-            <%} %>
-
-    <hr>
-
-    <% if (nota>=7){%>
-        <p>Aprovado!</p>
-    <%} else if (nota >4 && nota <=6) {%>
-        <p>Recuperação</p> 
-        <%} else {%>
-        <p>Reprovado</p>
-        <%}%>
-
-        <hr>
-
-        <% if (estoqueProdutos){ %>
-            <p>Produtos: [Banana, Maça, Melão]</p>
-            <% } else { %>
-                <p>Nenhum produto disponível</p>
-                <% } %>
-
-        <% if (idade >=12) { %>
-            <p>Você já não é mais criança</p>
-            <%} else { %>
-                <p>Você ainda é uma criança</p>
-                <% } %>
-
-        <h1>Desenho de Colorir</h1>
-        <img src="/img/bobbie.png" alt="" class="bobbie">
+   
 </body>
 </html>
