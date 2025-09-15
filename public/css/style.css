@@ -1,7 +1,15 @@
-h1{
-    color: rgb(235, 134, 11);
+body{
+    background-color: #FDD8F7;
 }
 
-h2{
-    color: red;
+.navegacao{
+    background-color: #C5A1FF;
+}
+
+.logo{
+    width: 40%;
+}
+
+#card01{
+    margin-top: 30px;
 }
