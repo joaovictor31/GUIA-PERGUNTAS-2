@@ -7,7 +7,8 @@ body{
 }
 
 .logo{
-    width: 40%;
+    width: 10em;
+    padding-left: 55px;
 }
 
 #card01{
