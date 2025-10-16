@@ -1,9 +1,15 @@
 const express = require("express");
 const app = express();
+const bodyParser = require("body-parser"); //BODY PARSER
 
 app.set('view engine','ejs');
 app.use(express.static('public'));
 
+app.use(express.urlencoded({extended:false})) //BODY PARSER
+app.use(express.json()) //BODY PARSER
+
+
+//ROTAS =>
 app.get("/", (req,res) => {
     res.render("index.ejs");
 })
@@ -14,7 +20,9 @@ app.get("/perguntar", (req,res) => {
 })
 
 app.post("/salvarpergunta", (req,res) => {
-    res.send("Formulário Recebido!")
+    let titulo = req.body.titulo;
+    let descricao = req.body.descricao;
+    res.send("Formulário Recebido! Título: " + titulo + " Descrição: " + descricao);
 })
 
 
